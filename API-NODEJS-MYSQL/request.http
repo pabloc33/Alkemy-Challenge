@@ -1,0 +1,30 @@
+###
+GET http://localhost:9000/getAllUsersRegisters
+
+###
+
+GET http://localhost:9000/getAllUsersRegisters/25
+
+###
+POST http://localhost:9000/createRegister
+Content-Type: application/json
+
+{
+  "concept": "Otro gasto",
+  "amount": 700,
+  "date": "2021-10-22",
+  "types": "Egreso"
+}
+
+###
+DELETE http://localhost:9000/deleteRecord/2
+
+###
+PUT http://localhost:9000/update/45
+Content-Type: application/json
+
+{
+  "concept": "transporte",
+  "amount": 3500,
+  "date": "2021-10-30"
+}
